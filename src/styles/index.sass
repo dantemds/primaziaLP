@@ -1,0 +1,39 @@
+@use 'variables'
+
+@font-face
+    font-family: 'Averta'
+    src: url('./../Assets/Fonts/Averta/AvertaDemoPE-Regular.otf') format('opentype'), url('./../Assets/Fonts/Averta/AvertaDemoPE-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'AvertaBold'
+    src: url('./../Assets/Fonts/Averta/AvertaDemoPE-ExtraboldItalic.otf') format('opentype'), url('./../Assets/Fonts/Averta/AvertaDemoPE-ExtraboldItalic.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    letter-spacing: 1em
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    transition: all .3s
+    font-family: variables.$font-stack
+
+#root
+    width: 100%
+
+
+
+h1, h2, h3, h4
+    color: variables.$text-color-primary
+
+p
+    text-indent: .5em
+
+a
+    color: variables.$base-color-secondary
+    text-decoration: none
+
+li
+    list-style: none

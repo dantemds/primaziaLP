@@ -1,0 +1,23 @@
+@use '../../styles/variables'
+
+.wrap-home-image
+    width: 100%
+    height: auto
+    margin: auto
+    display: flex
+    cursor: pointer
+    overflow: hidden
+    border-radius: variables.$middle-border-radius
+
+    img
+        width: 15rem
+        object-fit: cover
+
+
+@media ( max-width: 768px )
+    .wrap-home-image:hover
+        transform: scale(.8)
+
+    .wrap-home-image
+        width: 100%
+        transform: scale(.7)

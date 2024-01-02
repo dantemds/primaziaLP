@@ -1,0 +1,79 @@
+@use '../../../styles/variables'
+@use '../../../styles/mixins'
+
+#sobre
+    background-color: #FF9903
+           
+    .contentSobre
+        max-width: 1200px
+        display: flex
+        margin: auto
+        justify-content: space-between
+        padding: 3rem 0
+        gap: 2rem
+
+        .sobreLeft, .sobreRight
+            width: 500px
+            border-radius: .5rem
+            padding: 2rem
+
+        .sobreLeft
+            background-color: rgba(255, 255, 255, .7)
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .034), 0 6.7px 5.3px rgba(0, 0, 0, .048), 0 12.5px 10px rgba(0, 0, 0, .06), 0 22.3px 17.9px rgba(0, 0, 0, .072), 0 41.8px 33.4px rgba(0, 0, 0, .016), 0 100px 80px rgba(0, 0, 0, .02)
+
+
+            h2
+                text-align: center
+                margin-bottom: 1rem
+
+            p
+                text-align: justify
+                font-weight: 500
+
+
+        .sobreRight
+            border: 3px dashed rgba(255, 255, 255, .7)
+
+            ul
+                li
+                    display: flex
+                    align-items: center
+
+                    p
+                        width: 90%
+                        font-weight: 500
+                        text-align: justify
+                        text-indent: 0
+
+                    svg
+                        width: 10%
+                        color: rgba(255, 255, 255, .7)
+
+@media (max-width: 1200px )
+    #sobre
+        padding: 0 2rem
+      
+
+@media (max-width: 768px )
+    #sobre
+       .contentSobre
+            flex-direction: column
+            gap: 3rem
+
+            .sobreLeft, .sobreRight
+                width: 100%
+
+            .sobreRight
+                ul
+                    li
+                        margin: 1rem 0
+                        gap: 1rem
+
+                        p
+                            width: 85%
+                            text-align: left
+
+
+                        svg
+                            width: 15%
+                            font-size: 2.5rem

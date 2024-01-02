@@ -1,0 +1,29 @@
+@use '../../../styles/variables'
+@use '../../../styles/mixins'
+
+#planos
+    width: 100%
+    padding: 6rem 0
+
+    .contentPlanos
+        max-width: 1200px
+        display: flex
+        margin: auto
+        justify-content: center
+        gap: 5rem
+
+       
+
+@media (max-width: 1200px )
+    #planos
+        padding: 6rem 2rem
+      
+
+@media (max-width: 768px )
+    #planos
+        .contentPlanos
+            flex-direction: column
+            justify-content: center
+       
+
+                

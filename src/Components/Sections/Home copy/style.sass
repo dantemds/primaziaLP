@@ -1,0 +1,598 @@
+@use '../../../styles/variables'
+@use '../../../styles/mixins'
+
+#home
+    // position: relative
+    width: 100%
+    z-index: 10
+    // background-image: url('../../../Assets/Images/home-image.jpg')  
+    // background-repeat: no-repeat
+    // background-position: center
+    // background-size: cover  
+    background-color: #f7f3e3
+    border-radius: 0 0 0px 150px
+
+    .MainContent
+        display: flex
+        justify-content: space-between
+        margin: auto
+        max-width: 1200px
+        padding: 5rem 4rem
+
+        .contentLeft
+            width: 420px
+            display: flex
+            flex-direction: column
+            gap: 2rem
+            margin-bottom: 3rem
+            // background-color: orange
+
+            h1
+                width: 100%
+                // color: #202020
+                font-size: 2.2rem
+                line-height: 2.2rem
+                font-family: 'Outfit', sans-serif
+
+            h2
+                color: #858585
+                line-height: 1rem
+                font-size: .9rem
+                font-weight: 400
+                width: 390px
+
+            .BtnCta
+                width: 100%
+                border: 2px solid #a6823e
+                border-radius: 0 20px 20px
+                padding: .5rem 1rem
+                text-align: center
+                line-height: 1rem
+                font-weight: 600
+                font-size: .8rem
+                cursor: pointer
+                // box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .034), 0 6.7px 5.3px rgba(0, 0, 0, .048), 0 12.5px 10px rgba(0, 0, 0, .06), 0 22.3px 17.9px rgba(0, 0, 0, .072), 0 41.8px 33.4px rgba(0, 0, 0, .086), 0 100px 80px rgba(0, 0, 0, .12)
+                color: #a6823e
+                background-color: transparent
+
+            .BtnCta:hover
+                color: #fff
+                background-color: #a6823e
+
+            .SpanPreco
+                color: #707070
+                width: 100%
+                font-size: .6rem
+                text-align: center
+                margin-top: -2rem
+
+        .contentRight
+            position: relative
+            left: -450px
+            top: 100px
+            background-color: orange
+
+            #fotoHero
+                position: absolute
+                width: 450px
+                border-radius: 5px
+                box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .034), 0 6.7px 5.3px rgba(0, 0, 0, .048), 0 12.5px 10px rgba(0, 0, 0, .06), 0 22.3px 17.9px rgba(0, 0, 0, .072), 0 41.8px 33.4px rgba(0, 0, 0, .086), 0 100px 80px rgba(0, 0, 0, .12)
+
+            #fotoPontos
+                position: absolute
+                left: 380px
+                top: -28px
+                width: 100px
+
+.BottomContent
+    // color: #fff
+    height: auto
+    // margin-top: -5rem
+    // background-image: linear-gradient(to bottom right, rgb(20, 20, 20), #505050)
+    // background-image: linear-gradient(to bottom right, rgb(245, 245, 245), #505050)
+    // background-color: #b48c41
+    // border-top: 3px solid #a6823e
+
+    .wrapCols
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin: auto
+        // max-width: 1200px
+
+        .col
+
+        .col-1
+            .contentSobre
+                max-width: 1200px
+                display: flex
+                justify-content: space-between
+                gap: 4rem
+                padding: 0 4rem
+                margin: 10rem 0
+                // background-color: orange
+
+                .sobreLeft
+                    width: 450px
+                    position: relative
+                    // background-color: red
+
+                    img
+                        width: 300px
+                        position: absolute
+                        border-radius: 5px
+
+                    img:nth-child(2)
+                        top: 100px
+                        left: 150px
+
+                    .fotosDecoracao
+                        position: absolute
+                        top: 50px
+                        left: 50px
+                        width: 350px
+                        height: 160px
+                        transform: rotate(-30deg)
+                        background-color: #f7f3e3
+                        border-radius: 5px
+                        outline: 2px dashed #a6823e
+                        outline-offset: 1rem
+
+                .sobreRight
+                    width: 450px
+                    // background-color: blue
+
+                    h2
+                        font-size: 2rem
+                        margin-bottom: 3rem
+                        text-align: center
+
+                    p
+                        color: #858585
+                        line-height: 1rem
+                        font-size: .9rem
+                        font-weight: 400
+                        text-indent: 1rem
+                        text-align: justify
+                        margin-bottom: 1rem
+
+
+        .col-2
+            background-color: #f7f3e3
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 4rem 0
+
+            h2
+                text-align: center
+                margin-bottom: 2rem
+
+            p
+                max-width: 800px
+                color: #858585
+                line-height: 1rem
+                font-size: .9rem
+                font-weight: 400
+                text-indent: 1rem
+                text-align: justify
+                // background-color: red
+                margin: 0
+
+
+            .sobreCTA
+                color: #fff
+                background-color: #a6823e
+                font-size: .8rem
+                padding: .3rem 3rem
+                border-radius: 0 20px 20px
+                border: 2px solid #a6823e
+                margin-top: 2rem
+
+            .sobreCTA:hover
+                background-color: transparent
+                color: #a6823e
+
+        .col-3
+            // background-color: orange
+            width: 100%
+            display: flex
+            justify-content: center
+            padding: 10rem 0
+
+            .wrap-ele-pode-ser 
+                // background-color: pink
+                // width: 100%
+                max-width: 1200px
+
+
+                h2
+                    width: 100%
+                    margin-bottom: 2rem
+                    // background-color: brown
+
+                .wrap-itens-pode-ser
+                    // display: flex
+                    // justify-content: center
+                    padding: 1rem
+                    // background-color: yellow
+
+                    .wrap-itens
+                        // background-color: red
+                        display: flex
+                        flex-wrap: wrap
+                        gap: 2.5rem
+
+                        .tipo-cartao
+                            width: 350px
+                            padding: .8rem 0
+                            text-align: center
+                            background-color: #f8f8f8
+                            border-left: 2px solid #a6823e
+                            font-size: .9rem
+                            font-weight: 600
+                            color: #707070
+                            
+        .section-parceiro
+            width: 100%
+            height: calc( 345px - 2rem )
+            background-color: #f7f3e3
+
+            .card-parceiro
+                background-color: #fff
+                display: flex
+                width: 750px
+                margin: auto
+                margin-top: 2rem
+                border-radius: 5px
+                overflow: hidden
+                box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .034), 0 6.7px 5.3px rgba(0, 0, 0, .048), 0 12.5px 10px rgba(0, 0, 0, .06), 0 22.3px 17.9px rgba(0, 0, 0, .072), 0 41.8px 33.4px rgba(0, 0, 0, .086), 0 100px 80px rgba(0, 0, 0, .12)
+
+                img
+                    width: 200px
+
+                .wrap-content-parceiro
+                    padding: 2rem 3rem
+                    text-align: center
+
+                    p
+                        color: #858585
+                        margin-top: 1rem
+                        text-align: justify
+                        font-size: .9rem
+                        line-height: 1.1rem
+
+                    .CTA
+                        color: #fff
+                        background-color: #a6823e
+                        font-size: .9rem
+                        padding: .3rem 3rem
+                        border-radius: 0 20px 20px
+                        border: 2px solid #a6823e
+                        margin-top: 2rem
+                        cursor: pointer
+
+                    .CTA:hover
+                        background-color: transparent
+                        color: #a6823e
+
+
+        .section-mvv
+            width: 100%
+            padding: 11rem 0 3rem 0
+
+            .wrap-mvv
+                width: 100%
+                max-width: 1200px
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                gap: 4rem
+                margin: auto
+
+                .item-mvv
+                    width: 750px
+                    margin: auto
+
+                    h2 
+                        text-align: center
+
+                    p
+                        color: #858585
+                        margin-top: 1rem
+                        text-align: justify
+                        font-size: .9rem
+                        line-height: 1.1rem
+
+        .section-frases
+            padding: 0
+            padding-bottom: 6rem
+
+        .frase-biblica
+            width: 100%
+            background-color: #404040
+            padding: 1.5rem 0
+            margin-top: 8rem 
+
+            p
+                width: 100%
+                color: #fff
+                font-weight: 300
+                font-size: .9rem
+                text-align: center
+                text-decoration: underline #a6823e 
+
+        .col-planos
+            width: 100%
+            display: flex
+            justify-content: center
+            background-color: #f7f3e3
+            padding: 4rem 0
+            margin-bottom: 6rem
+
+            .wrap-planos
+                // background-color: lightblue
+                max-width: 1200px
+
+                h2
+                    text-align: center
+
+                .wrap-itens-planos
+                    // background-color: pink
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    gap: 2rem
+                    margin-top: 3rem
+
+                    .item-plano
+                        width: 270px
+                        padding: 2rem
+                        background-color: #fff
+                        border-radius: 0 2rem 2rem 2rem
+                        box-shadow: 0 0 5px rgba(0, 0, 0, .15)
+                        font-size: .9rem
+
+                        h3
+                            color: #a6823e
+                            width: 100%
+                            height: 3.5rem
+                            text-align: center
+                            // background-color: lightgreen
+                            border-bottom: 1px solid #e2e2e2
+
+                        h4
+                            color: #a6823e
+                            margin-top: 1.5rem
+
+                        p
+                            color: #707070
+
+                        ul > li
+                            list-style: disc inside
+                            color: #a6823e
+
+                            span
+                                color: #707070
+
+        .col-4
+            padding: 4rem 0
+            // background-color: blue
+
+            h2
+                // color: #fff
+                font-size: 1.5rem
+                font-weight: 700
+                margin-bottom: 2rem
+
+            p
+                color: #202020
+                margin-bottom: 1rem
+                text-align: justify
+                font-weight: 400
+                font-size: 1rem
+                line-height: 1.5rem
+
+            ul
+                font-weight: 400
+                font-size: .8rem
+                line-height: 1rem
+
+                li
+                    display: flex
+                    align-items: center
+                    margin-bottom: 1rem
+
+                    a
+                        color: #858585
+                        font-size: .9rem
+
+                    svg
+                        color: #a6823e
+                        height: .8rem
+                        width: .8rem
+                        margin-right: 4px
+                        margin-bottom: -.1rem
+
+
+                .linkWpp
+                    color: #a6823e
+                    background-color: transparent
+                    border: 2px solid #a6823e
+                    border-radius: 3px
+                    padding: .5rem 1rem
+                    font-weight: 600
+                    cursor: pointer
+
+                .linkWpp:hover
+                    background-color: #a6823e
+                    color: #fff
+                
+                .cta_apresentacao
+                    background-color: #a6823e
+                    font-size: .9rem
+                    padding: .3rem 3rem
+                    border-radius: 0 20px 20px
+                    border: 2px solid #a6823e
+                    margin-top: 2rem
+                    cursor: pointer
+
+                    a
+                        color: #fff
+
+                .cta_apresentacao:hover
+                    background-color: transparent
+
+                    a
+                        color: #a6823e
+
+@media (max-width: 1200px )
+    #home
+        .MainContent
+            padding: 0 2rem
+
+        .BottomContent
+            padding: 0 2rem
+
+            .wrapCols
+                gap: 1.5rem
+
+@media (max-width: 768px )
+    #home
+        .MainContent
+            flex-direction: column
+            padding: 2rem 1rem
+            gap: 6rem
+
+            .contentLeft
+                width: 100%
+                padding: 4rem 0
+
+                h1, h2, .BtnCta, .SpanPreco
+                    width: 100%
+
+            .contentRight
+                // left: -450px
+                top: -100px
+                background-color: orange
+
+                #fotoHero
+                    position: absolute
+                    width: 100%
+                    left: 450px
+
+                #fotoPontos
+                    position: absolute
+                    left: 380px
+                    top: -28px
+                    width: 100px
+
+    .BottomContent
+        padding: 2rem 0
+
+        .wrapCols
+            flex-direction: column
+            margin: 0
+
+            .col
+                padding: 2rem 0
+
+            .col-1
+
+                .contentSobre
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    padding: 0 1rem
+                    margin-bottom: 2rem
+
+                    .sobreLeft
+                        width: 100%
+                        height: 200px
+                        position: relative
+
+                        img
+                            width: 60%
+
+                        img:nth-child(2)
+                            top: 60px
+                            left: 95px
+                        
+
+                        .fotosDecoracao
+                            width: 200px
+                            height: 80px
+                            top: 45px
+                            left: 55px
+                            transform: rotate(-35deg)
+
+
+                    .sobreRight
+                        width: 100%
+
+                        h2
+                            font-size: 2rem
+
+                        p
+                            font-size: .9rem
+
+            .col-2
+                padding: 4rem 1rem
+
+            
+            .col-3
+                padding: 4rem 1rem
+
+                .wrap-ele-pode-ser 
+                    width: 100%
+                    
+                    h2
+                        text-align: center
+
+                    .wrap-itens-pode-ser
+                        padding: 0
+
+                        .wrap-itens
+
+                            .tipo-cartao
+                                width: 100%
+            .col-planos
+                margin-bottom: 1rem
+
+            .section-parceiro
+                width: 100%
+                margin-bottom: 6rem
+                padding: 0 1rem
+
+                .card-parceiro
+                    width: 100%
+
+                    img
+                        display: none
+
+                    .wrap-content-parceiro
+                        padding: 2rem
+
+
+            .section-mvv
+                width: 100%
+                padding: 5rem 1rem 0 1rem
+
+                .wrap-mvv
+
+                    .item-mvv
+                        width: 100%
+
+                        h2
+                            text-align: center
+
+            .section-frases
+                padding: 3rem 1rem 4rem 1rem
+
+            .frase-biblica
+                    padding: 1.5rem 1rem
+
+            .col-4
+                margin-top: 2rem

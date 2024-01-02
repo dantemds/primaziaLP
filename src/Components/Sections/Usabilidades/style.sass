@@ -1,0 +1,45 @@
+.col-3
+    width: 100%
+    display: flex
+    justify-content: center
+    padding: 10rem 0
+
+    .wrap-ele-pode-ser 
+        max-width: 1200px
+
+
+        h2
+            width: 100%
+            margin-bottom: 2rem
+
+        .wrap-itens-pode-ser
+            padding: 1rem
+
+            .wrap-itens
+                display: flex
+                flex-wrap: wrap
+                gap: 2.5rem
+
+                .tipo-cartao
+                    width: 350px
+                    padding: .8rem 0
+                    text-align: center
+                    background-color: #f8f8f8
+                    border-left: 2px solid #FF9903
+                    font-size: .9rem
+                    font-weight: 600
+                    color: #202020
+
+@media (max-width: 1200px )
+    .col-3
+        padding: 8rem 2rem
+
+@media (max-width: 768px )
+    .col-3
+        padding: 6rem 2rem
+
+        .wrap-ele-pode-ser 
+            .wrap-itens-pode-ser
+                .wrap-itens
+                    .tipo-cartao
+                        width: 100%

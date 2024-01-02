@@ -1,0 +1,75 @@
+.section-parceiro
+    width: 100%
+    height: calc( 345px - 2rem )
+    background-color: #FF9903
+    margin-bottom: 3rem
+
+    .card-parceiro
+        background-color: #fff
+        display: flex
+        width: 750px 
+        margin: auto
+        margin-top: 2rem
+        border-radius: 5px
+        overflow: hidden
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .034), 0 6.7px 5.3px rgba(0, 0, 0, .048), 0 12.5px 10px rgba(0, 0, 0, .06), 0 22.3px 17.9px rgba(0, 0, 0, .072), 0 41.8px 33.4px rgba(0, 0, 0, .086), 0 100px 80px rgba(0, 0, 0, .12)
+
+        img
+            width: 200px
+
+        .wrap-content-parceiro
+            padding: 2rem 3rem
+            text-align: center
+
+            p
+                color: #202020
+                margin-top: 1rem
+                text-align: justify
+                font-size: 1rem
+                line-height: 1.1rem
+
+            .CTA
+                background-color: #FF9903
+                font-size: .9rem
+                border-radius: 0 20px 20px
+                border: 2px solid #FF9903
+                cursor: pointer
+                display: flex
+                margin: auto
+                margin-top: 2rem
+
+                a
+                    width: 100%
+                    color: #fff
+                    padding: .3rem 3rem
+
+
+            .CTA:hover
+                background-color: transparent
+                a
+                    color: #FF9903
+
+@media (max-width: 1200px )
+    .section-parceiro
+        padding: 0 2rem
+
+        .card-parceiro
+            width: 100%
+
+@media (max-width: 768px )
+    .section-parceiro
+        padding: 0 2rem
+        margin-bottom: 6rem
+
+        .card-parceiro  
+            img
+                display: none
+
+@media (max-width: 410px )
+    .section-parceiro
+        height: 365px
+        margin-bottom: 6rem
+
+        .card-parceiro
+            .wrap-content-parceiro
+                padding: 2rem 1.5rem
